@@ -63,6 +63,7 @@ p, ul{
 #content{
     margin-top:50px;
 	min-height: 200px;
+    overflow-x: scroll;
 }
 
 #header{
@@ -93,7 +94,9 @@ p, ul{
   .make-row();
   #right{
     .make-md-column(3);
-    position: fixed;
+     @media screen and (min-width: @screen-md-min) {
+         position: fixed;
+     }
     
   }
   #left{

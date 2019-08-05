@@ -6240,6 +6240,7 @@ ul {
 #content {
   margin-top: 50px;
   min-height: 200px;
+  overflow-x: scroll;
 }
 #header {
   padding: 30px;
@@ -6329,12 +6330,16 @@ ul {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: fixed;
 }
 @media (min-width: 992px) {
   #page #right {
     float: left;
     width: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #page #right {
+    position: fixed;
   }
 }
 #page #left {
